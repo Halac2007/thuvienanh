@@ -216,7 +216,7 @@ header nav ul ul {
 
 #portfolio {
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)) !important;
-  grid-gap: 40px !important;
+  grid-gap: 25px !important;
 }
 
 .project img {
@@ -232,6 +232,30 @@ header nav ul ul {
 }
 .project .title_img a {
   font-size: 1.3rem;
+}
+
+.title-cate {
+  font-family: 'Roboto Condensed', sans-serif !important;
+}
+
+.pagination ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: right;
+  column-gap: 20px;
+}
+
+.pagination li a {
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  text-decoration: none;
+  border-radius: 5px;
+}
+
+.pagination li a.active {
+  background-color: #017ec6;
+  color: white;
 }
 @media (max-width: 1024px) {
   .menu-mobile {
@@ -319,6 +343,9 @@ header nav ul ul {
   .wrap-slider .thumb img {
     height: auto !important;
   }
+  .wrap-pagecate .list-articles .post-list .story {
+    align-items: center !important;
+  }
 }
 @media (max-width: 480px) {
   .splide__arrow--next,
@@ -334,6 +361,12 @@ header nav ul ul {
   .box-table {
     width: 100%;
     margin: auto;
+  }
+  h3 {
+    font-size: 1.1rem !important;
+  }
+  .project .title_img a {
+    font-size: 1.1rem !important;
   }
 }
 
